@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bodega Aitor Iza Ibáñez · Vinos de Leza, Rioja Alavesa</title>
+<meta name="description" content="Bodega familiar en Leza, Rioja Alavesa. Vinos artesanos de tinto, blanco y rosado. Pide directamente y confirmamos tu pedido por WhatsApp.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Fraunces:ital,opsz,wght@1,9..144,500&family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">iz<span class="brand-mark-tail">as</span></span>
+      <span class="brand-name">Bodega Aitor Iza Ibáñez</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#historia">La bodega</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <button class="cart-btn" id="cartToggle" aria-label="Abrir cesta de pedido">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 5h2l2.4 12.2a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 2-1.6L21 8H6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="21" r="1.3" fill="currentColor"/><circle cx="18" cy="21" r="1.3" fill="currentColor"/></svg>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-media">
+    <img src="assets/img/izas-tinto.jpg" alt="Botellas de vino Izas de Bodega Aitor Iza Ibáñez sobre la mesa del taller familiar en Leza" loading="eager">
+    <div class="hero-scrim"></div>
+  </div>
+  <div class="wrap hero-inner">
+    <p class="eyebrow">Leza · Rioja Alavesa</p>
+    <h1>Vino hecho a mano,<br>botella a botella.</h1>
+    <p class="hero-lede">Somos una bodega familiar. Cada añada la seguimos desde la viña hasta la etiqueta que le pegamos nosotros mismos. Elige tus botellas y te confirmamos el pedido por WhatsApp.</p>
+    <div class="hero-actions">
+      <a href="#catalogo" class="btn btn-primary">Ver el catálogo</a>
+      <a href="#historia" class="btn btn-ghost">Conoce la bodega</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT / STORY ============ -->
+<section class="story" id="historia">
+  <div class="wrap story-grid">
+    <div class="story-text">
+      <p class="eyebrow">Nuestra historia</p>
+      <h2>Un proyecto que nace en Leza</h2>
+      <p>Leza es una de las zonas con mayor tradición vitivinícola de Rioja Alavesa, una tierra marcada por el vino y el respeto a sus viñedos. Nuestra bodega es el reflejo de una forma de entender el vino desde la cercanía, el trabajo artesanal y la identidad del entorno que nos rodea.</p>
+      <p>Elaboramos cada vino con el objetivo de expresar el carácter del terruño y de cada cosecha, cuidando cada detalle desde la viña hasta la botella. Este proyecto no es solo una bodega: es una manera de continuar y reinterpretar la herencia vitivinícola de nuestro pueblo, apostando por vinos honestos, con personalidad, profundamente ligados a Leza y a Rioja Alavesa.</p>
+      <ul class="story-facts">
+        <li><span>Familiar</span>Cada etiqueta, embotellado a mano</li>
+        <li><span>Leza</span>Viñedos propios en Rioja Alavesa</li>
+        <li><span>D.O.Ca. Rioja</span>Tintos, blancos y rosados</li>
+      </ul>
+    </div>
+    <div class="story-media">
+      <img src="assets/img/fachada-bodega.jpg" alt="Fachada de la Bodega Aitor Iza Ibáñez en Leza, Rioja Alavesa" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ============ CATALOG ============ -->
+<section class="catalog" id="catalogo">
+  <div class="wrap">
+    <div class="catalog-head">
+      <div>
+        <p class="eyebrow">Nuestros vinos</p>
+        <h2>El catálogo de la bodega</h2>
+      </div>
+      <div class="filters" role="group" aria-label="Filtrar por tipo de vino">
+        <button class="filter-chip is-active" data-filter="todos">Todos</button>
+        <button class="filter-chip" data-filter="tinto">Tintos</button>
+        <button class="filter-chip" data-filter="blanco">Blancos</button>
+        <button class="filter-chip" data-filter="rosado">Rosados</button>
+      </div>
+    </div>
+
+    <div class="catalog-grid" id="catalogGrid">
+      <!-- rendered by app.js -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ BAND / TRUST ============ -->
+<section class="band">
+  <div class="wrap band-inner">
+    <div class="band-item">
+      <h3>Pedido directo</h3>
+      <p>Sin intermediarios. Eliges, mandas el pedido y hablamos por WhatsApp para cerrarlo.</p>
+    </div>
+    <div class="band-item">
+      <h3>Producción corta</h3>
+      <p>Añadas limitadas, pensadas para acompañarlas mientras están en su mejor momento.</p>
+    </div>
+    <div class="band-item">
+      <h3>Recogida o envío</h3>
+      <p>Coordinamos contigo la forma de entrega que mejor te venga al confirmar el pedido.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT / FOOTER ============ -->
+<footer class="site-footer" id="contacto">
+  <div class="wrap footer-grid">
+    <div>
+      <div class="brand brand-footer">
+        <span class="brand-mark" aria-hidden="true">iz<span class="brand-mark-tail">as</span></span>
+        <span class="brand-name">Bodega Aitor Iza Ibáñez</span>
+      </div>
+      <p class="footer-tag">Bodega familiar · Leza, Rioja Alavesa</p>
+    </div>
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <p><a href="mailto:aitoriza@hotmail.es">aitoriza@hotmail.es</a></p>
+      <p><a href="tel:+34650531513">650 531 513</a></p>
+    </div>
+    <div class="footer-col">
+      <h4>Pedidos</h4>
+      <p>Añade tus vinos a la cesta y envía el pedido por WhatsApp. Te confirmamos disponibilidad y entrega.</p>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>&copy; <span id="year"></span> Bodega Aitor Iza Ibáñez · Producto de España</p>
+  </div>
+</footer>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Cesta de pedido">
+  <div class="cart-drawer-head">
+    <h2>Tu pedido</h2>
+    <button class="icon-btn" id="cartClose" aria-label="Cerrar cesta">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+
+  <div class="cart-body" id="cartBody">
+    <!-- STEP 1: cart lines -->
+    <div class="cart-step" id="cartStepLines">
+      <div class="cart-lines" id="cartLines"></div>
+      <p class="cart-empty" id="cartEmpty">Tu cesta está vacía. Añade alguna botella del catálogo para empezar tu pedido.</p>
+    </div>
+
+    <!-- STEP 2: customer details -->
+    <form class="cart-step cart-form" id="cartStepForm" hidden>
+      <p class="cart-form-intro">Cuéntanos quién eres para que podamos confirmar el pedido por WhatsApp.</p>
+      <label>
+        Nombre y apellidos
+        <input type="text" id="custName" name="custName" required placeholder="Tu nombre">
+      </label>
+      <label>
+        Teléfono de contacto
+        <input type="tel" id="custPhone" name="custPhone" required placeholder="600 000 000">
+      </label>
+      <label>
+        Forma de entrega
+        <select id="custDelivery" name="custDelivery">
+          <option value="Recoger en bodega (Leza)">Recoger en bodega (Leza)</option>
+          <option value="Envío a domicilio">Envío a domicilio</option>
+        </select>
+      </label>
+      <label id="addressField">
+        Dirección de envío
+        <textarea id="custAddress" name="custAddress" rows="2" placeholder="Calle, número, población, código postal"></textarea>
+      </label>
+      <label>
+        Notas (opcional)
+        <textarea id="custNotes" name="custNotes" rows="2" placeholder="Fecha preferida, comentarios..."></textarea>
+      </label>
+    </form>
+  </div>
+
+  <div class="cart-footer">
+    <div class="cart-summary">
+      <span>Subtotal</span>
+      <strong id="cartSubtotal">0,00 €</strong>
+    </div>
+    <p class="cart-note">El precio final y la disponibilidad se confirman por WhatsApp.</p>
+    <button class="btn btn-primary btn-block" id="cartNextBtn" disabled>Continuar</button>
+    <button class="btn btn-ghost btn-block" id="cartBackBtn" hidden>Volver a la cesta</button>
+    <a class="btn btn-whatsapp btn-block" id="cartWhatsBtn" hidden target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-1 1-1 2.3 0 1.4 1 2.7 1.1 2.9.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3 0-.1-.2-.2-.4-.3z"/><path d="M12 2C6.5 2 2 6.4 2 12c0 1.9.5 3.6 1.4 5.2L2 22l5-1.3c1.5.8 3.2 1.3 5 1.3 5.5 0 10-4.4 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3c-.9-1.4-1.4-3-1.4-4.6 0-4.6 3.8-8.4 8.5-8.4s8.5 3.8 8.5 8.4-3.8 8.4-8.4 8.4z"/></svg>
+      Enviar pedido por WhatsApp
+    </a>
+  </div>
+</aside>
+
+<!-- Mobile floating checkout hint -->
+<button class="fab-cart" id="fabCart" hidden>
+  <span id="fabCartCount">0</span> · Ver pedido
+</button>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
